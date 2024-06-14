@@ -1,0 +1,27 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Navbar.master.cs" Inherits="FoodShop.Layouts.Navbar" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:Button ID="Home" runat="server" Text="Home" OnClick="Home_Click" />
+            <asp:Button ID="orderFood" runat="server" Text="Order Food" OnClick="orderFood_Click" />
+            <asp:Button ID="History" runat="server" Text="History" OnClick="History_Click" />
+            <asp:Button ID="manageFood" runat="server" Text="Manage Menu" OnClick="manageFood_Click" />
+            <asp:Button ID="orderQueue" runat="server" Text="Order Queue" OnClick="orderQueue_Click" />
+            <asp:Button ID="ProfileButton" runat="server" Text="Profile" OnClick="Profile_Click" />
+            <asp:Button ID="transactionReport" runat="server" Text="Transaction Report" OnClick="transactionReport_Click" />
+            <asp:Button ID="Logout" runat="server" Text="Logout" OnClick="Logout_Click" />
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

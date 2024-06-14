@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2134e5148d214f90bbdb3ce5eece7739" Name="Diagram1">
+        <EntityTypeShape EntityType="FoodShopDatabaseModel.Cart" Width="1.5" PointX="5.25" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FoodShopDatabaseModel.Menu" Width="1.5" PointX="3" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FoodShopDatabaseModel.MenuType" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="FoodShopDatabaseModel.Restaurant" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FoodShopDatabaseModel.TransactionDetail" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FoodShopDatabaseModel.TransactionHeader" Width="1.5" PointX="3" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="FoodShopDatabaseModel.User" Width="1.5" PointX="0.75" PointY="7.625" IsExpanded="true" />
+        <AssociationConnector Association="FoodShopDatabaseModel.FK_Carts_Menu" ManuallyRouted="false" />
+        <AssociationConnector Association="FoodShopDatabaseModel.FK_Carts_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="FoodShopDatabaseModel.FK_Menu_MenuTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="FoodShopDatabaseModel.FK_Menu_Restaurants" ManuallyRouted="false" />
+        <AssociationConnector Association="FoodShopDatabaseModel.FK_TransactionDetails_Menu" ManuallyRouted="false" />
+        <AssociationConnector Association="FoodShopDatabaseModel.FK_TransactionDetails_TransactionHeaders" ManuallyRouted="false" />
+        <AssociationConnector Association="FoodShopDatabaseModel.FK_TransactionHeaders_Users" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
